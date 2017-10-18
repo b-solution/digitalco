@@ -1838,7 +1838,7 @@ textarea:focus {
   background-size: cover;
 }
 .banner-block {
-  background: url("bg/bg5.jpg") center center no-repeat;
+  background: url("bg/bg2.jpg") center center no-repeat;
   background-size: cover;
 }
 .top-padding {
@@ -2383,7 +2383,7 @@ span.dropcap {
   background-attachment: fixed;
 }
 #services .section-block-title {
-  background-image: url("bg/bg5.jpg");
+  background-image: url("bg/bg2.jpg");
   background-size: cover;
   background-position: center center;
 }
