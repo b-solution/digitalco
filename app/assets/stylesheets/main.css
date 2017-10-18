@@ -653,7 +653,7 @@ section {
 }
 .section-title {
   position: relative;
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: rgba(224, 21, 92, 0.9);
 }
 .section-title:after {
   content: '';
@@ -663,7 +663,7 @@ section {
   width: 0;
   height: 0;
   margin-left: -40px;
-  border-top: 40px solid rgba(34, 34, 34, 0.9);
+  border-top: 40px solid rgba(224, 21, 92, 0.9);
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   -webkit-box-sizing: border-box;
@@ -678,7 +678,6 @@ section {
 }
 .section-title .section-title-body .head-title {
   color: #ffffff;
-  font-size: 54px;
   padding: 0 0 15px;
   margin: 0;
   font-size: 70px;

@@ -18,15 +18,11 @@
       </div>
     </div><!--/section-title-->
   </div><!--/section-block-title-->
-  <div class="block2">
+  <div class="">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <div class="section-sub-title">
-            <article class="section-title-body">
-              <h1 class="head-title"></h1>
-            </article>
-          </div>
+        <div class="col-md-6 col-sm-6">
+
           <p>
             Digital Co est une équipe de 10 développeurs web et mobile experts dans les technologies Ruby, PHP et JS. Nous sommes basée à Nantes et Paris.
           </p>
@@ -50,45 +46,44 @@
           </p>
           <br>
         </div>
-        <!--<div class="col-md-6 col-sm-6">-->
-          <!--<div id="form-wrapper">-->
-            <!--<div id="form-inner">-->
-              <!--<div id="ErrResults">&lt;!&ndash; Error Here &ndash;&gt;</div>-->
-              <!--<div id="MainResult">&lt;!&ndash; Response Here &ndash;&gt;</div>-->
-              <!--<div id="MainContent">-->
-                <!--<form id="MyContactForm" name="MyContactForm" method="post">-->
-                  <!--<p class="name">-->
-                    <!--<input type="text" name="name" id="name" placeholder="Your Name">-->
-                    <!--<label for="name" id="nameLb"><span class="error">*Name Field Required</span></label>-->
-                  <!--</p>-->
-                  <!--<p>-->
-                    <!--<input type="email" name="email" id="email" placeholder="Your Email">-->
-                    <!--<label for="email" id="emailLb">-->
-                      <!--<span class="error error1">*Email Field Required</span>-->
-                      <!--<span class="error error2">*Email Not Valid</span>-->
-                    <!--</label>-->
-                  <!--</p>-->
-                  <!--<p>-->
-                    <!--<input type="text" name="phone" id="phone" placeholder="Your Telephone">-->
-                    <!--<label for="phone" id="phoneLb"><span class="error">*Telephone Field Required</span></label>-->
-                  <!--</p>-->
-                  <!--<p class="textarea">-->
-                    <!--<textarea name="message" id="message" placeholder="Your Message" rows="4"></textarea>-->
-                    <!--<label for="message" id="messageLb"><span class="error">*Message Field Required</span></label>-->
-                  <!--</p>-->
-                  <!--<div class="clearfix"></div>-->
-                  <!--<a href="#" class="contact-btn">Send Message</a>-->
-                <!--</form>-->
-              <!--</div>&lt;!&ndash;MainContent&ndash;&gt;-->
-            <!--</div>&lt;!&ndash;form-inner&ndash;&gt;-->
-          <!--</div>&lt;!&ndash;form-wrapper&ndash;&gt;-->
-        <!--</div>&lt;!&ndash;/.col-md-8&ndash;&gt;-->
+        <div class="col-md-6 col-sm-6">
+          <div id="form-wrapper">
+            <div id="form-inner">
+              <div id="ErrResults"><!-- Error Here --></div>
+              <div id="MainResult"><!-- Response Here --></div>
+              <div id="MainContent">
+                <form id="MyContactForm" name="MyContactForm" method="post" action="/send_mail">
+                  <p class="name">
+                    <input type="text" name="name" id="name" placeholder="Votre Nom & Prénom">
+                    <label for="name" id="nameLb"><span class="error">*champ obligatoire</span></label>
+                  </p>
+                  <p>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="email" id="emailLb">
+                      <span class="error error1">*champ obligatoire </span>
+                    </label>
+                  </p>
+                  <p>
+                    <input type="text" name="phone" id="phone" placeholder="Téléphone">
+                    <label for="phone" id="phoneLb"><span class="error">*champ obligatoire </span></label>
+                  </p>
+                  <p class="textarea">
+                    <textarea name="message" id="message" placeholder="Votre Message" rows="4"></textarea>
+                    <label for="message" id="messageLb"><span class="error">*champ obligatoire </span></label>
+                  </p>
+                  <div class="clearfix"></div>
+                  <button type="submit" class="contact-btn">Envoyer Message</button>
+                </form>
+              </div><!--MainContent-->
+            </div><!--form-inner-->
+          </div><!--form-wrapper-->
+        </div><!--/.col-md-8-->
       </div>
     </div>
   </div>
-  <!--<div class="google-map">-->
-
-    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d335900.93392687745!2d2.3504871190777603!3d48.87296719673322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1394030722365" ></iframe>-->
-
-  <!--</div>-->
+  <div class="google-map">
+    <iframe src="//www.google.com/maps/embed/v1/place?q=119 Boulevard de Sébastopol, Paris&zoom=13
+      &key=AIzaSyARM-giEZuBPClKsRC5sIRxuChrgm2f8Yo">
+    </iframe>
+  </div>
 </section>

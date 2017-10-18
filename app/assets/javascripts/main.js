@@ -10,7 +10,9 @@ jQuery(document).ready(function ($) {
         $("#status").fadeOut(); // will first fade out the loading animation
         $("#preloader").delay(450).fadeOut("slow"); // will fade out the white DIV that covers the website.
     });
-
+    var myVideo = document.getElementById('vid');
+    myVideo.play()
+    myVideo.loop = true;
     /* ==============================================
      Full screen div for home video
      =============================================== */

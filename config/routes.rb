@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'send_mail', to: 'contact#send_mail'
+
   get 'welcome/index'
   root to: 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
