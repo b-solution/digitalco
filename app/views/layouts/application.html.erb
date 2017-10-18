@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Digital Co : Les experts Ruby, PHP et JS à Nantes et Paris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="title" content="Digital Co : Les experts Ruby, PHP et JS à Nantes et Paris">
+  <meta name="og:title" content="Digital Co : Les experts Ruby, PHP et JS à Nantes et Paris">
+  <meta name="description" content="Digital Co c'est 10 développeurs web et mobile seniors experts sous les technologies Ruby on Rails, Angular JS, Symfony, React, Ionic, Cordova ...">
+  <meta name="og:description" content="Digital Co c'est 10 développeurs web et mobile seniors experts sous les technologies Ruby on Rails, Angular JS, Symfony, React, Ionic, Cordova ...">
+  <meta name="author" content="MosaicDesign">
+
+  <meta charset="utf-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">``
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  <%= javascript_include_tag 'modernizr' %>
+
+
+  <!--[if gt IE 8]><!--><%= javascript_include_tag 'less' %><!--<![endif]-->
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+
+<!-- =======================
+=====     Preloader   ======
+=========================-->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+<!-- =======================
+=====     To  top   ======
+=========================-->
+<div id="totop">
+  <i class="ion-arrow-up-b"></i>
+</div>
+
+<!-- =======================
+=====     Header      ======
+=========================-->
+<%= render partial: 'shared/header' %>
+<!-- End header -->
+
+
+<!-- =======================
+=====   Home section  ======
+=========================-->
+
+<%= yield %>
+
+<!-- ===========================================
+=====          Footer section               ====
+============================================ -->
+<%= render partial: 'shared/footer' %>
+
+<%= javascript_include_tag 'application' %>
+<!--Here will be Google Analytics code from BoilerPlate-->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<section id="home">
+  <div class="tp-banner-container">
+    <div class="tp-banner" >
+      <ul class="list-unstyled">
+        <li data-transition="fade" data-slotamount="7"  data-delay="6000">
+
+          <!-- MAIN IMAGE -->
+          <%= video_tag "Keyboard_tapping_2.mp4",
+                        autoplay: :autoplay,
+                        loop: :loop,
+                        mute: :mute,
+                        class: "video" %>
+          <%#= image_tag "preview/slider/4_bg.jpg", alt: "slidebg1",
+                        data: {
+                            bgposition: "center center",
+                            kenburns: "on",
+                            duration: "12000",
+                            ease: "Power0.easeInOut",
+                            bgfit: "110" ,
+                            bgfitend: "100",
+                            bgpositionend: "center center"
+                        }%>
+
+          <div class="tp-caption  sfb skewtobottom  rs-parallaxlevel-2"
+               data-x="center"
+               data-y="155"
+               data-speed="1000"
+               data-start="1000"
+               data-easing="Back.easeOut"
+               data-endspeed="400"
+               data-endeasing="Power1.easeIn"
+          > <%= image_tag "preview/slider/logo.png" %>
+          </div>
+          <div class="tp-caption active_heavy_100 sft skewtobottom text-center"
+               data-x="center"
+               data-y="255"
+               data-speed="1000"
+               data-start="1000"
+               data-easing="Back.easeOut"
+               data-endspeed="400"
+               data-endeasing="Power1.easeIn"
+          >
+          </div>
+          <div class="tp-caption white_heavy_70 sft skewtobottom text-center"
+               data-x="center"
+               data-y="455"
+               data-speed="1000"
+               data-start="2000"
+               data-easing="Back.easeOut"
+               data-endspeed="400"
+               data-endeasing="Power1.easeIn"
+          >Le partenaire pour vos projets Ruby, Symfony et JS.
+          </div>
+
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
