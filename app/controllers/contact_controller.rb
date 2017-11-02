@@ -19,6 +19,6 @@ class ContactController < ApplicationController
                     :from => "Digital CO server<mailgun@sandbox5f1b43d3cdf342a28294493b7208ae82.mailgun.org>",
                     :to => "contact@digital-co.fr",
                     :subject => "Nouveau message de #{options[:name]} (#{options[:email]})",
-                    :text => "#{option[:content]}"
+                    :text => "#{options[:content]}"
   end
 end
