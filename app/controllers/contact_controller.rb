@@ -14,17 +14,6 @@ class ContactController < ApplicationController
   end
   private
   def send_simple_message options
-    require 'mailgun'
-
-    mg_client = Mailgun::Client.new("key-e5ace1ac07bac280ebfdd09d389f8e55")
-    message_params = {:from    => "mailgun@sandbox5f1b43d3cdf342a28294493b7208ae82.mailgun.org",
-                        to: 'contact@digital-co.fr',
-                      :subject => "Nouveau message de #{options[:name]} (#{options[:email]})",
-                      :text => "#{options[:content]}"
-    }
-
-    domain = "sandbox5f1b43d3cdf342a28294493b7208ae82.mailgun.org"
-    mg_client.send_message domain, message_params
-
+    ContactMailer.welcome_email(options).deliver
   end
 end
